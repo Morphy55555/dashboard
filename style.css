@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: solid black 1px; */
+}
+
+    form {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Roboto';
 }
@@ -11,8 +21,14 @@ body {
     'nav content';
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .nav {
     grid-area: nav;
+    padding-left: 1em;
+    
 }
 
 .header {
@@ -26,18 +42,75 @@ body {
     grid-template-rows: 1fr;
     grid-area: 
     'projects announcements';
+    background-color: rgb(217, 223, 228);
+    position: relative;
+    padding-top: 1em;
+    
 }
 
+.search {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0;
+    padding: 0;
+}
+
+
+.search-bar input{
+    margin-top: 2em;
+    /* margin-left: 2em; */
+    border: none;
+    background-color: rgb(217, 221, 223);;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.name {
+    margin-top: 1em;
+}
+.user-info {
+    margin-left: 2em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+button {
+    height: 30%;
+    width: 30%;
+    background-color: rgba(49, 153, 245, 0.888);
+    color: white;
+    border-radius: 1em;
+    border: none;
+    
+}
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 15px 0 15px;
+    border-left: .8em solid rgb(255, 178, 35);
+    padding: 2em;
+    font-size: small;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 .sidebar {
     grid-row: 1/3;
     height: 100vh;
     text-align: start;
-    background-color: rgba(92, 169, 237, 0.888);
+    background-color: rgba(49, 153, 245, 0.888);
     color: white;
     font-weight: bold;
 }
@@ -50,6 +123,205 @@ body {
     line-height: 2rem;
 }
 
+.project-heading {
+    position: absolute;
+    left: 1em;
+    margin-top: 1.3em;
+}
+.announcements-heading {
+    margin-top: .8em;
+    padding-bottom: .4em;
+}
+
+.topcard {
+    margin-top: 3em;
+}
+
+.bottomcard {
+    margin-bottom: 3em;
+}
+
+.trending {
+    background-color: white;
+    font-size: small;
+    margin-right: 2em;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sect1 {
+    background-color: white;
+    font-size: small;
+    margin-right: 2em;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.sect1 p, .trending p{
+    padding: 0 1em 0 1em;
+}
+
+h3 {
+    margin: 0;
+}
+
+.nav-items2 {
+    padding-top: 4em;
+}
+
+.dboard::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1.1em;
+    background-image: url(../scribbles/svg/view-dashboard-outline.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+  }
+.home::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1.5em;
+    background-image: url(../scribbles/svg/home-outline.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+  }
+ 
+  .profile::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1.5em;
+    background-image: url(../scribbles/svg/account-box.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+    padding-left: .5em;
+  }
+  .messages::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1.5em;
+    background-image: url(../scribbles/svg/message-outline.svg);
+   
+    background-repeat: no-repeat;
+    margin-top: 1em;
+  }
+  .history::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1.5em;
+    background-image: url(../scribbles/svg/history.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+  }
+  .tasks::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1.5em;
+    background-image: url(../scribbles/svg/tasks.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+
+  }
+  .communities::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1.5em;
+    background-image: url(../scribbles/svg/account-group-outline.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+  }
+  .settings::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1.5em;
+    background-image: url(../scribbles/svg/cog-outline.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+  }
+  .support::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1.5em;
+    background-image: url(../scribbles/svg/help-circle-outline.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+  }
+  .privacy::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1.5em;
+    background-image: url(../scribbles/svg/shield-check.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+  }
+  
+  .icon {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url(../scribbles/svg/magnify.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+}
+
+.icon2 {
+    content: '';
+    display: inline-block;
+    height: 3em;
+    width: 5em;
+    background-image: url(../scribbles/svg//vecteezy_happy-cartoon-boy_77165.svg);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    margin-top: 1em;
+}
 
 
+  .dboard {
+    padding-right: 1em;
+  }
 
+  .search-bar {
+    padding-left: 2em;
+  }
+  .user-info {
+    display: flex;
+  }
+
+  .user-info p {
+    align-self: flex-end;
+  }
+
+  .name {
+    display: flex;
+  }
+  .name p {
+    align-self: flex-end;
+  }
+
+
+  .trending-heading {
+    padding-bottom: 1em;
+  }
+
+ 

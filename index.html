@@ -1,73 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../resetsheet.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="nav">
-                <h2>Dashboard</h2>
+                <h2 class="dboard">Dashboard</h2>
                 <ul class="nav-items1">
-                    <li class="home">Home</li>
-                    <li class="profile">Profile</li>
-                    <li class="messages">Messages</li>
-                    <li class="history">History</li>
-                    <li class="tasks">Tasks</li>
-                    <li class="communities">Communities</li>
+                    <a href="#">
+                        <li class="home">Home</li>
+                    </a>
+                    <a href="#">
+                        <li class="profile">Profile</li>
+                    </a>
+                    <a href="#">
+                        <li class="messages">Messages</li>
+                    </a>
+                    <a href="#">
+                        <li class="history">History</li>
+                    </a>
+                    <a href="#">
+                        <li class="tasks">Tasks</li>
+                    </a>
+                    <a href="#">
+                        <li class="communities">Communities</li>
                 </ul>
                 <ul class="nav-items2">
-                    <li class="settings">Settings</li>
-                    <li class="support">Support</li>
-                    <li class="privacy">Privacy</li>
+                    </a>
+                    <a href="#">
+                        <li class="settings">Settings</li>
+                    </a>
+                    <a href="#">
+                        <li class="support">Support</li>
+                    </a>
+                    <a href="#">
+                        <li class="privacy">Privacy</li>
+                    </a>
                 </ul>
             </div>
         </div>
         <div class="header">
             <div class="search">
-                <form action="" method="get">
-                    <input type="search" name="search-bar" id="search">
-                </form>
+                <div class='search-bar'>
+
+                       
+                            <span class="icon"></span>
+                            <input type="search" name="search-bar">
+                        
+                </div>
+                <div class="name">
+                    <span class="bell"></span>
+                    <span class="icon2"></span>
+                    <p><strong>Bob Marley</strong></p>
+                </div>
+                <div class="user-info">
+                    <span class="icon2"></span>
+                    <p>Hi there,<br><strong> Bob Marley (@Bob)</strong></h3></p>
+                    
+                </div>
+                <div class="buttons">
+                    <button id="news">News</button>
+                    <button id="upload">Upload</button>
+                    <button id="share">Share</button>
+                </div>
             </div>
         </div>
         <div class="content">
+            <div class="project-heading">
+                <h3>Current Projects</h3>
+            </div>
             <div class="projects">
-                <div class="project-card1">dfsfsfsfsdfsdfdsfsdfdsfs</div>
-                <div class="project-card2">dfsfsfsfsdfsdfdsfsdfdsfs</div>
-                <div class="project-card3">dfsfsfsfsdfsdfdsfsdfdsfs</div>
-                <div class="project-card4">dfsfsfsfsdfsdfdsfsdfdsfs</div>
-                <div class="project-card5">dfsfsfsfsdfsdfdsfsdfdsfs</div>
-                <div class="project-card6">dfsfsfsfsdfsdfdsfsdfdsfs</div>
+
+                <div class="project-card topcard"><strong>Project of sorts</strong><br>Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                </div>
+                <div class="project-card topcard"><strong>Project of sorts</strong><br>Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                </div>
+                <div class="project-card"><strong>Project of sorts</strong><br>Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque</div>
+                <div class="project-card"><strong>Project of sorts</strong><br>Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque</div>
+                <div class="project-card bottomcard"><strong>Project of sorts</strong><br>Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                </div>
+                <div class="project-card bottomcard"><strong>Project of sorts</strong><br>Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                </div>
             </div>
             <div class="announcements">
-                <div class="heading1">
-                    <h3>Site Maintainence</h3>
-                    <p>dfsdfsdfsdfsd</p>
+                <div class="announcements-heading">
+                    <h3>Announcements</h3>
                 </div>
-                <div class="heading2">
-                    <h3>Community Share Day</h3>
-                    <p>fdsfsdfdsfs</p>
+                <div class="sect1">
+                    <div class="heading1">
+                        <p><strong><br>Site Maintainence</strong></br>Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                    <div class="heading2">
+                        <p><strong><br>Site Maintainence</strong></br>Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                    <div class="heading3">
+                        <p><strong><br>Site Maintainence</strong></br>Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </div>
                 </div>
-                <div class="heading3">
-                    <h3>Updated Privacy Policy</h3>
-                    <p>dssdfsdfsfsdfs</p>
+
+                <div class="trending-heading">
+                    <h3>Trending</h3>
                 </div>
+                <ul class="trending">
+                    <li class="trending-name1"><p><strong>@Bob</strong><br>Things and stuff</p></li>
+                    <li class="trending-name2"><p><strong>@Marley</strong><br>Some more things and stuff</p></li></li>
+                    <li class="trending-name3"><p><strong>@Bob</strong><br>Stuff and things</p></li></li>
+                    <li class="trending-name4"><p><strong>@Dylan</strong><br>Some more stuff and things</p></li></li>
+                </ul>
             </div>
-            <div class="trending"></div>
-            <ul>
-                <li class="trending-name1">Bob</li>
-                <li class="trending-name2">Marley</li>
-                <li class="trending-name3">Bob</li>
-                <li class="trending-name4">Dylan</li>
-            </ul>
         </div>
     </div>
 </body>
+
 </html>
